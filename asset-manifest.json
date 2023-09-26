@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/transporte-tijuana/static/css/main.eb16c8fd.css",
-    "main.js": "/transporte-tijuana/static/js/main.13675419.js",
+    "main.css": "/transporte-tijuana/static/css/main.073c9b0a.css",
+    "main.js": "/transporte-tijuana/static/js/main.4a0125fd.js",
     "static/js/787.a6a82665.chunk.js": "/transporte-tijuana/static/js/787.a6a82665.chunk.js",
+    "static/media/logo.svg": "/transporte-tijuana/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/transporte-tijuana/index.html",
-    "main.eb16c8fd.css.map": "/transporte-tijuana/static/css/main.eb16c8fd.css.map",
-    "main.13675419.js.map": "/transporte-tijuana/static/js/main.13675419.js.map",
+    "main.073c9b0a.css.map": "/transporte-tijuana/static/css/main.073c9b0a.css.map",
+    "main.4a0125fd.js.map": "/transporte-tijuana/static/js/main.4a0125fd.js.map",
     "787.a6a82665.chunk.js.map": "/transporte-tijuana/static/js/787.a6a82665.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb16c8fd.css",
-    "static/js/main.13675419.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.4a0125fd.js"
   ]
 }
