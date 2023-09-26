@@ -32,7 +32,7 @@ function Navbar() {
     return (
         <>
             <NavContainer>
-                <h2>Muevete por <span>Tijuana</span></h2>
+                <h2>Muévete por <span>Tijuana</span></h2>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     {/* Agregar la condición para ejecutar el evento solo en dispositivos móviles o tabletas */}
                     {isMobileOrTablet ? (
