@@ -31,7 +31,7 @@ function Navbar() {
 
     return (
         <>
-            <NavContainer>
+            <NavContainer className={`links ${clicked ? 'active' : ''}`}>
                 <h2>Muévete por <span>Tijuana</span></h2>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     {/* Agregar la condición para ejecutar el evento solo en dispositivos móviles o tabletas */}
@@ -55,7 +55,7 @@ function Navbar() {
                 <div className='burger'>
                     <BurgerButton clicked={clicked} handleClick={handleClick} />
                 </div>
-                <BgDiv className={`initial${clicked ? ' active' : ''}`} />
+                <BgDiv className={`initial ${clicked ? 'active' : ''}`} />
             </NavContainer>
         </>
     );
