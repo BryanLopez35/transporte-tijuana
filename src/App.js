@@ -6,9 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <H1>
+        <h1>
           Tansporte de Tijuana
-        </H1>
+        </h1>
         <a>
           Rutas de tijuana
         </a>
