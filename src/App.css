@@ -1,39 +1,38 @@
-/* Estilo para la página de inicio */
-.landing-page {
-  position: relative;
-  height: 100vh; /* Esto asegura que la página ocupe el 100% de la altura de la ventana */
-  overflow: hidden;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-/* Estilo para la imagen de fondo */
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin distorsión */
-  z-index: -1; /* Coloca la imagen detrás de los elementos de contenido */
+.App-link {
+  color: #61dafb;
 }
 
-/* Estilo para el contenedor de búsqueda */
-.search-container {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-}
-
-/* Estilo para el input de búsqueda */
-.search-input {
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
