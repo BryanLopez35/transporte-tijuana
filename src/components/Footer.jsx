@@ -74,7 +74,7 @@ const Footer = () => {
         <div className='sb__footer-below'>
           <div className='sb__footer-copyright'>
             <p>
-            &copy; {new Date().getFullYear()} Bryan López. Todos los derechos reservados
+              &copy; {new Date().getFullYear()} Bryan López. Todos los derechos reservados
             </p>
           </div>
           <div className='sb__footer-below-links'>
