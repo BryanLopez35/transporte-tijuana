@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faInstagram, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -25,12 +25,6 @@ const Footer = () => {
             </a>
           </div>
           <div className='sb__footer-links_div'>
-            <h4>Partners</h4>
-            <a href='/employer'>
-              <p>Titulo 6</p>
-            </a>
-          </div>
-          <div className='sb__footer-links_div'>
             <h4>Sobre</h4>
             <a href='/employer'>
               <p>Nosotros</p>
@@ -42,11 +36,6 @@ const Footer = () => {
           <div className='sb__footer-links_div'>
             <h4>Síguenos en</h4>
             <div className='socialmedia'>
-              <p>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faFacebook} size="3x" />
-                </a>
-              </p>
               <p>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} size="3x" />
