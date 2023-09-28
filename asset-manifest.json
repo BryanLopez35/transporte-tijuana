@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/transporte-tijuana/static/css/main.1ec5efa8.css",
-    "main.js": "/transporte-tijuana/static/js/main.473830be.js",
+    "main.css": "/transporte-tijuana/static/css/main.4e323922.css",
+    "main.js": "/transporte-tijuana/static/js/main.a5d0cabc.js",
     "static/js/787.a6a82665.chunk.js": "/transporte-tijuana/static/js/787.a6a82665.chunk.js",
+    "static/media/arctoTijuana.jpg": "/transporte-tijuana/static/media/arctoTijuana.7a081113c3883bbbabab.jpg",
+    "static/media/cecut.jpg": "/transporte-tijuana/static/media/cecut.1a09c84afc8e1b989c94.jpg",
+    "static/media/tijerasTijuana.jpeg": "/transporte-tijuana/static/media/tijerasTijuana.d86ae0a72072443c3f60.jpeg",
     "index.html": "/transporte-tijuana/index.html",
-    "main.1ec5efa8.css.map": "/transporte-tijuana/static/css/main.1ec5efa8.css.map",
-    "main.473830be.js.map": "/transporte-tijuana/static/js/main.473830be.js.map",
+    "main.4e323922.css.map": "/transporte-tijuana/static/css/main.4e323922.css.map",
+    "main.a5d0cabc.js.map": "/transporte-tijuana/static/js/main.a5d0cabc.js.map",
     "787.a6a82665.chunk.js.map": "/transporte-tijuana/static/js/787.a6a82665.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ec5efa8.css",
-    "static/js/main.473830be.js"
+    "static/css/main.4e323922.css",
+    "static/js/main.a5d0cabc.js"
   ]
 }
