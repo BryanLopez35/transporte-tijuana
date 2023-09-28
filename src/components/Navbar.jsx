@@ -1,64 +1,32 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import BurgerButton from './BurgerButton'
+import React from 'react';
+import styled from 'styled-components';
+import BurgerButton from './BurgerButton';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = React.useState(false);
 
-    const handleClick = () => {
-        // Cuando esta true lo pasa a false y viceversa
-        setClicked(!clicked);
-    };
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
-    useEffect(() => {
-        function handleResize() {
-            if (window.innerWidth > 768) {
-                setClicked(false);
-            }
-        }
-
-        // Agregar un listener de cambio de tamaño de ventana
-        window.addEventListener('resize', handleResize);
-
-        // Llamar a handleResize inmediatamente para manejar el estado inicial
-        handleResize();
-
-        // Eliminar el listener cuando se desmonta el componente
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    const isMobileOrTablet = window.innerWidth <= 768;
-
-    return (
-        <>
-            <NavContainer className={`links ${clicked ? 'active' : ''}`}>
-                <h2>Muévete por <span>Tijuana</span></h2>
-                <div className={`links ${clicked ? 'active' : ''}`}>
-                    {/* Agregar la condición para ejecutar el evento solo en dispositivos móviles o tabletas */}
-                    {isMobileOrTablet ? (
-                        <>
-                            <a onClick={handleClick} href="https://google.com">Inicio</a>
-                            <a onClick={handleClick} href="#h">Rutas</a>
-                            <a onClick={handleClick} href="#h">Puntos de interés</a>
-                            <a onClick={handleClick} href="#h">Contáctanos</a>
-                        </>
-                    ) : (
-                        // Renderizar los enlaces sin el evento onClick en otros dispositivos
-                        <>
-                            <a href="https://google.com">Inicio</a>
-                            <a href="#h">Rutas</a>
-                            <a href="#h">Puntos de interés</a>
-                            <a href="#h">Contáctanos</a>
-                        </>
-                    )}
-                </div>
-                <div className='burger'>
-                    <BurgerButton clicked={clicked} handleClick={handleClick} />
-                </div>
-                <BgDiv className={`initial ${clicked ? 'active' : ''}`} />
-            </NavContainer>
-        </>
-    );
+  return (
+    <>
+      <NavContainer className={`links ${clicked ? 'active' : ''}`}>
+        <h2>Muévete por <span>Tijuana</span></h2>
+        <div className={`links ${clicked ? 'active' : ''}`}>
+          <Link to="/Inicio">Inicio</Link>
+          <Link to="/Rutas">Rutas</Link>
+          <Link to="/PuntosInteres">Puntos de interés</Link>
+          <Link to="/Contacto">Contáctanos</Link>
+        </div>
+        <div className='burger'>
+          <BurgerButton clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? 'active' : ''}`} />
+      </NavContainer>
+    </>
+  );
 }
 
 export default Navbar;

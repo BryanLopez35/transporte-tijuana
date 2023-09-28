@@ -1,3 +1,44 @@
 .body-div{
-    height: 700px;
+    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+    padding: 0.4rem;
 }
+
+/* Establecemos reglas para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .body-div {
+      padding: 0.2rem; /* Reducimos el padding en pantallas más pequeñas */
+    }
+  }
+
+  /* Estilos para la galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery div {
+    cursor: pointer;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para el modal */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal img {
+    max-width: 100%;
+    height: auto;
+  }
